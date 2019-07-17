@@ -93,12 +93,17 @@ except ImportError:
     postgres_fields = None
 
 
-# coreapi is optional (Note that uritemplate is a dependency of coreapi)
+# coreapi is optional
 try:
     import coreapi
-    import uritemplate
 except ImportError:
     coreapi = None
+
+
+# uritemplate is optional
+try:
+    import uritemplate
+except ImportError:
     uritemplate = None
 
 
